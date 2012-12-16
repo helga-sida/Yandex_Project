@@ -1,0 +1,114 @@
+@font-face {
+	font-family: Hermes Normal;
+	src: url(14048.eot);
+}
+		
+@font-face {
+	font-family: Hermes Normal;
+	src: url(14048.ttf);
+}
+			
+* {
+	margin: 0;
+	padding: 0;
+}
+			
+body {
+	font-family: Hermes Normal, Arial, Helvetica; 
+	background: url(../img/body.bg.png);
+}
+
+header, 
+nav, 
+section, 
+footer {
+	display: block;
+}
+			
+header {
+	text-align: center;
+	background-color: transparent;
+	color: #555;
+	padding: 10px 0;
+	text-transform: uppercase;	
+}
+			
+header h1 {
+	cursor: default;
+}
+			
+section {
+	font-family: Arial;
+	width: 970px;
+	margin: 30px auto;
+	padding: 20px;
+	background: #fff;
+	filter: 
+	    progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=0,strength=5), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=45,strength=2), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=90,strength=5), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=135,strength=5), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=180,strength=10), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=225,strength=5), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=270,strength=5), 
+		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=315,strength=2); 
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	color: #555;
+	height: 300px;
+	position: relative;
+}
+			
+section h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+			
+section span {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 16px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	cursor: pointer;
+	display: none;
+}
+		
+nav {
+	margin: 20px 0 0;
+}
+		
+nav ul {
+	margin: 0 auto;
+	width: 1000px;
+}
+			
+nav li {
+	display: inline-block;
+	width: 250px;
+	margin-left: -0.3em;
+	border-bottom: 3px solid transparent;
+	text-align: center;	
+}
+			
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1.5em;
+	color: #555;
+}
+			
+/*footer {
+	position: fixed;
+	bottom: 0;
+	padding: 5px;
+}
+			
+footer span {
+	color: #ccc;
+}*/
