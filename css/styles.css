@@ -2,12 +2,12 @@
 	font-family: Hermes Normal;
 	src: url(14048.eot);
 }
-		
+			
 @font-face {
 	font-family: Hermes Normal;
 	src: url(14048.ttf);
 }
-			
+
 * {
 	margin: 0;
 	padding: 0;
@@ -27,10 +27,11 @@ footer {
 			
 header {
 	text-align: center;
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0);
 	color: #555;
 	padding: 10px 0;
 	text-transform: uppercase;	
+	min-width: 1020px;
 }
 			
 header h1 {
@@ -43,30 +44,33 @@ section {
 	margin: 30px auto;
 	padding: 20px;
 	background: #fff;
-	filter: 
-	    progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=0,strength=5), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=45,strength=2), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=90,strength=5), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=135,strength=5), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=180,strength=10), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=225,strength=5), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=270,strength=5), 
-		progid:DXImageTransform.Microsoft.Shadow(color=#bbbbbb,direction=315,strength=2); 
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-	box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	zoom: 1;
+	filter:
+		progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=135,strength=4);
+	-moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.25); 
+	-webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.25); 
+	box-shadow: 4px 4px 4px rgba(0,0,0,0.25); 
 	color: #555;
 	height: 300px;
 	position: relative;
 }
-			
+
+#section1 p {
+	text-indent: 20px;	
+}
+
+#section1 p,
+#section2 p {
+	margin-bottom: 10px;
+}
+		
 section h2 {
 	text-transform: uppercase;
 	font-size: 18px;
 	margin-bottom: 20px;
 }
 			
-section span {
+section  > span {
 	position: absolute;
 	right: 20px;
 	top: 20px;
@@ -77,6 +81,28 @@ section span {
 	line-height: 20px;
 	cursor: pointer;
 	display: none;
+}
+
+section p {
+	text-align: justify;
+}
+
+section a {
+	color: #4837c7;
+	text-decoration: none;
+}
+
+section a:hover {
+	color: #555;
+}
+
+section ul {
+	margin-left: 20px;
+}
+
+p span{
+	font-weight: bold;
+	
 }
 		
 nav {
@@ -92,7 +118,7 @@ nav li {
 	display: inline-block;
 	width: 250px;
 	margin-left: -0.3em;
-	border-bottom: 3px solid transparent;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
 	text-align: center;	
 }
 			
@@ -103,12 +129,4 @@ nav a {
 	color: #555;
 }
 			
-/*footer {
-	position: fixed;
-	bottom: 0;
-	padding: 5px;
-}
-			
-footer span {
-	color: #ccc;
-}*/
+/* обычно в ходе разработки использую классы для задания стилей, но так как этот проект небольшой, в селекторах используются теги */
